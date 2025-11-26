@@ -2,10 +2,19 @@ body{
     font-family: sans-serif;
     margin: 0;
     line-height: 1.5;
-    
     font-size: 16px;
+    box-sizing: border-box;
 }
+.tab__wrapper{
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    scroll-behavior: smooth;
 
+}
+*{
+    box-sizing: inherit;
+}
 .tab__nav{
     display: flex;
     list-style: none;
@@ -17,8 +26,12 @@ body{
     background-color: rgb(255, 145, 145);
 }
 .tab__content{
-    display: none;
+    padding: 5px;
+    width: 100%;
+    flex-shrink: 0;
+
+
 }
-.tab__content--active{
+/*.tab__content--active{
     display: block;
-}
+}*/
