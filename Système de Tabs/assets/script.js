@@ -12,7 +12,7 @@ if (tabLinks){
 }
 
 function tabTrigger(event){
-    event.preventDefault();
+    /*event.preventDefault();*/
 
     const parentTab = event.currentTarget.closest(".tab")
 
@@ -27,6 +27,7 @@ function tabTrigger(event){
     const tabSelect = parentTab.querySelector(tabSelectId);
     tabSelect.classList.add("tab__content--active");
 }
+
 
 
 
